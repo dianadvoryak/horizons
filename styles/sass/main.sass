@@ -98,6 +98,18 @@ body
     width: 423px
     margin-top: 300px
     text-transform: lowercase
+.slick-arrow
+  z-index: 10
+.slick-prev:before
+  font-size: 100px
+  opacity: 1
+.slick-next:before
+  font-size: 100px
+  opacity: 1
+.slick-next
+  right: 100px
+.slick-prev
+  left: 20px
 .skin
   border-bottom: #000 solid 3px
   &-inner
@@ -401,6 +413,8 @@ body
     margin-bottom: 0
 // ≥992px md
 @media (max-width:992px)
+  .slick-arrow
+    display: none
   .first__carusel-pic, .first__carusel-text
     height: 300px
   .first__carusel-h1
